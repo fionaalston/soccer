@@ -392,28 +392,37 @@
     '<div class="fact"><b>'+esc(f.label)+'</b><i>'+esc(f.value)+'</i></div>').join('');
 
   /* highlights */
-  const vids = (P.videos||[]).filter(v => v.videoId || v.title);
-  const first = vids[0], rest = vids.slice(1);
+  const EMB   = 'https://www.youtube-nocookie.com/embed/';
+  const ALLOW = 'accelerometer; clipboard-write; encrypted-media; picture-in-picture';
+  const frame = (src, title) =>
+    '<div class="frame"><iframe src="'+src+'" title="'+esc(title)+
+    '" allowfullscreen allow="'+ALLOW+'"></iframe></div>';
+  const cap = v => '<p class="vcap">'+esc(v.title)+'</p><p class="vsub">'+esc(v.caption||'')+'</p>';
+
+  const PL    = P.channelPlaylist || '';
+  const plSrc = PL ? EMB+'videoseries?list='+encodeURIComponent(PL) : '';
+  const vids  = (P.videos||[]).filter(v => v.videoId);
   let h = '';
-  if(first && first.videoId){
-    h += '<div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/'+
-      encodeURIComponent(first.videoId)+'" title="'+esc(first.title)+'" allowfullscreen '+
-      'allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe></div>'+
-      '<p class="vcap">'+esc(first.title)+'</p><p class="vsub">'+esc(first.caption||'')+'</p>';
-  } else if(first){
-    h += '<div class="frame frame--empty"><div>Add a YouTube video ID to <b>profile.js</b><br>to play this reel here.</div></div>'+
-      '<p class="vcap">'+esc(first.title)+'</p><p class="vsub">'+esc(first.caption||'')+'</p>';
+
+  if(vids.length){
+    h += frame(EMB+encodeURIComponent(vids[0].videoId), vids[0].title) + cap(vids[0]);
+    const rest = vids.slice(1);
+    if(rest.length){
+      h += '<div class="vgrid" style="margin-top:34px">'+rest.map(v =>
+        '<div class="vcard">'+frame(EMB+encodeURIComponent(v.videoId), v.title)+cap(v)+'</div>'
+      ).join('')+'</div>';
+    }
+    if(plSrc){
+      h += '<div style="margin-top:44px"><p class="subh">Full film library</p>'+
+        frame(plSrc, 'Full film library')+
+        '<p class="vsub">Every reel on the channel, newest first.</p></div>';
+    }
+  } else if(plSrc){
+    h += frame(plSrc, 'Highlight film')+
+      '<p class="vcap">Highlight film</p>'+
+      '<p class="vsub">Every reel on the channel, newest first \u2014 open the playlist menu in the player to browse.</p>';
   }
-  if(rest.length){
-    h += '<div class="vgrid" style="margin-top:34px">'+rest.map(v => {
-      const inner = (v.videoId
-        ? '<div class="frame"><iframe src="https://www.youtube-nocookie.com/embed/'+encodeURIComponent(v.videoId)+
-          '" title="'+esc(v.title)+'" allowfullscreen allow="accelerometer; clipboard-write; encrypted-media; picture-in-picture"></iframe></div>'
-        : '<div class="frame frame--empty"><div>Add a video ID in profile.js</div></div>')+
-        '<p class="vcap">'+esc(v.title)+'</p><p class="vsub">'+esc(v.caption||'')+'</p>';
-      return '<div class="vcard">'+inner+'</div>';
-    }).join('')+'</div>';
-  }
+
   if(P.channelUrl) h += '<p style="margin-top:30px"><a class="btn btn--dark" href="'+esc(P.channelUrl)+
     '" target="_blank" rel="noopener">All film on YouTube</a></p>';
   $('hl').innerHTML = h;

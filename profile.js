@@ -58,6 +58,7 @@ const PROFILE = {
     { videoId: "", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
     { videoId: "", title: "2026 Spring Soccer Highlights",       caption: "De Anza Force 10G ECNL" },
   ],
+  channelPlaylist: "UUgXVdyow3k-qL3DlXNdd74A",
   channelUrl: "https://www.youtube.com/@fiona-alston-soccer",
 
   /* ---------- PERSONAL INFO ---------- */
@@ -76,7 +77,7 @@ const PROFILE = {
   contact: {
     email:       "fionaalston2028@gmail.com",
     phone:       "628-278-1047",
-    parentName:  "Gene Alston",
+    parentName:  "Nicole Alston",
     parentEmail: "REPLACE-ME@example.com",
   },
 

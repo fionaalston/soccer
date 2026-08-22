@@ -78,7 +78,7 @@ const PROFILE = {
     email:       "fionaalston2028@gmail.com",
     phone:       "628-278-1047",
     parentName:  "Nicole Alston",
-    parentEmail: "REPLACE-ME@example.com",
+    parentEmail: "nicolealston@gmail.com",
   },
 
   /* ---------- ACADEMICS ---------- */

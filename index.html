@@ -160,8 +160,9 @@
   /* ---------- fact band ---------- */
   .facts{ background:var(--pitch-3); color:var(--bone); }
   .facts__g{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); }
-  .fact{ padding:17px 20px 19px 0; border-right:1px solid var(--rule-d); }
-  .fact:last-child{ border-right:0; }
+  .fact{ padding:17px 24px 19px 24px; border-right:1px solid var(--rule-d); }
+  .fact:first-child{ padding-left:0; }
+  .fact:last-child{ border-right:0; padding-right:0; }
   .fact b{
     display:block; font-family:var(--disp); font-size:12.5px; font-weight:700;
     letter-spacing:.2em; text-transform:uppercase; color:var(--sky); margin-bottom:2px;
@@ -258,7 +259,7 @@
   .skip:focus{ left:12px; top:12px; }
   @media (prefers-reduced-motion:reduce){ html{ scroll-behavior:auto; } }
   @media (max-width:560px){
-    .fact{ border-right:0; border-bottom:1px solid var(--rule-d); padding-right:0; }
+    .fact{ border-right:0; border-bottom:1px solid var(--rule-d); padding-left:0; padding-right:0; }
     .fact:last-child{ border-bottom:0; }
   }
 </style>

@@ -78,7 +78,7 @@ Claude finds `profile.js`, makes the edit, and commits. The live site updates in
 
 # Part 3 — Things that need filling in
 
-- [ ] `REPLACE-ME@example.com` in `profile.js` → a real parent email
+- [x] `REPLACE-ME@example.com` in `profile.js` → a real parent email
 - [ ] YouTube video IDs for the two highlight reels (the part of the URL after `v=`)
 - [ ] `fiona-hero.jpg` — landscape action shot for the hero
 - [ ] `fiona-action.jpg` — second photo beside the personal info card

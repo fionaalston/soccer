@@ -28,9 +28,10 @@ const PROFILE = {
   /* One line that makes the case. Set in italic serif under the name. */
   positioning: "Left-footed forward who plays wide on either flank, with four US Soccer Talent ID call-ups and a NorCal PDP state selection since 2025.",
 
-  /* Full-bleed hero photo. Drop a landscape action shot next to
-     index.html, or paste any image URL. */
-  heroPhoto: "fiona-hero.jpg",
+  /* Hero portrait. A background-free cut-out (transparent PNG/WebP) reads
+     best — she stands on the hero baseline against the green. Drop the file
+     next to index.html, or paste any image URL. */
+  heroPhoto: "fiona-hero.webp",
 
   /* ---------- BADGES ----------
      Add logo files next to index.html and reference them below.

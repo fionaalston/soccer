@@ -80,7 +80,7 @@ Claude finds `profile.js`, makes the edit, and commits. The live site updates in
 
 - [x] `REPLACE-ME@example.com` in `profile.js` → a real parent email
 - [ ] YouTube video IDs for the two highlight reels (the part of the URL after `v=`)
-- [ ] `fiona-hero.jpg` — landscape action shot for the hero
+- [x] `fiona-hero.webp` — hero portrait (background removed so she stands against the green)
 - [ ] `fiona-action.jpg` — second photo beside the personal info card
 - [ ] NCAA Eligibility Center ID, once registered
 - [ ] Transcript PDFs — uncomment the `transcripts` block once uploaded

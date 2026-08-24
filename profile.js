@@ -108,7 +108,7 @@ const PROFILE = {
     {
       group: "Club Team",
       items: [
-        { year: "",        text: "De Anza Force 10G ECNL" },
+        { year: "",        text: "De Anza Force 10G ECNL | Starter" },
         { year: "",        text: "Primary: Forward, left or right wing" },
         { year: "",        text: "Secondary: Left back" },
       ],

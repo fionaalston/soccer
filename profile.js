@@ -125,7 +125,7 @@ const PROFILE = {
     {
       group: "NorCal Premier PDP",
       items: [
-        { year: "2026", text: "U16 State Selection — Oshima Cup, Hakodate, Japan" },
+        { year: "2026", text: "U16 State Selection — Oshima Cup | Hakodate, Japan" },
       ],
     },
     {
@@ -179,7 +179,7 @@ const PROFILE = {
         { name: "ECNL Showcase",           detail: "San Diego",      date: "Oct 2024" },
       ],
       otherShowcases: [
-        { name: "SUSA College Showcase",      detail: "", date: "Feb 2026" },
+        { name: "SUSA College Showcase",      detail: "New York", date: "Feb 2026" },
         { name: "Pleasanton Rage College Showcase", detail: "", date: "Aug 2025" },
         { name: "San Diego Surf Cup",               detail: "", date: "Jul 2024" },
       ],

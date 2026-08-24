@@ -512,7 +512,7 @@
   const ev = P.events||{};
   const evr = l => (l&&l.length)
     ? '<ul class="rows">'+l.map(e=>'<li class="row"><span class="row__m">'+esc(e.name)+
-      (e.detail?' <span class="soft">'+esc(e.detail)+'</span>':'')+'</span><span class="row__d">'+
+      (e.detail?' &nbsp;<span class="soft">'+esc(e.detail)+'</span>':'')+'</span><span class="row__d">'+
       esc(e.date)+'</span></li>').join('')+'</ul>'
     : '';
   const evrSched = l => (l&&l.length)

@@ -86,14 +86,16 @@ const PROFILE = {
   /* ---------- ACADEMICS ---------- */
   academics: {
     school:     "Crystal Springs Uplands School",
-    address:    "400 Uplands Dr, Hillsborough, CA",
+    address:    "",
     classYear:  "Class of 2028 (Junior)",
-    gpa:        "4.0 unweighted",
+    gpa:        "4.08 unweighted",
     courses: [
-      "Honors Math III Advanced",
-      "Honors Mandarin IV",
-      "Computer Science II",
-      "Chemistry",
+      "Honors Pre-Calculus/Calculus",
+      "Honors Advanced Topics in Biology + Lab",
+      "Honors Mandarin V",
+      "Honors Advanced Topics History/Government",
+      "College Prep English III",
+      "Advanced Projects Glazing/Sculpture",
     ],
     /* Upload transcript PDFs next to index.html and link them. */
     transcripts: [
@@ -176,7 +178,8 @@ const PROFILE = {
   clubs: [
     { year: "2026-27", text: "Co-President, Black Student Union" },
     { year: "2025-26", text: "Vice President, Red Cross Community Service" },
-    { year: "2025-26", text: "Selected for Student Academic Council" },
+    { year: "2026-27", text: "Selected, Student Academic Council" },
+    { year: "2025-26", text: "Selected, Student Academic Council" },
     { year: "2025",    text: "Writer, TrailBlazeHERS — women's sports magazine" },
   ],
 

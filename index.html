@@ -204,14 +204,16 @@
   .fact{ padding:17px 24px 19px 24px; border-right:1px solid var(--rule-d); }
   .fact:first-child{ padding-left:0; }
   .fact:last-child{ border-right:0; padding-right:0; }
-  /* Club sits halfway toward Primary Foot; its own border-right would
-     float mid-air after the shift, so the divider lives on its left
-     edge instead, and Foot's own right border is dropped to match.
-     Only safe once all five facts share one row — below that, Club
-     and Foot can land in the same row and the shift would overlap it. */
+  /* Club sits closer to Primary Foot; its own border-right would float
+     mid-air after the shift, so the divider lives on its left edge
+     instead, and Foot's own right border is dropped to match. The
+     shift is a fixed px (not a % of Club's own width) so it can't grow
+     into an overlap with Foot's label — the widest thing in that box —
+     at narrower column widths. Only safe once all five facts share one
+     row; below that, Club and Foot land in the same row instead. */
   @media (min-width:900px){
     .fact:nth-child(3){ border-right:0; }
-    .fact:nth-child(4){ transform:translateX(-50%); border-left:1px solid var(--rule-d); border-right:0; }
+    .fact:nth-child(4){ transform:translateX(-20px); border-left:1px solid var(--rule-d); border-right:0; }
     .fact:nth-child(4) i{ white-space:nowrap; }
   }
   .fact b{

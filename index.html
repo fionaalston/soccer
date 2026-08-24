@@ -203,9 +203,17 @@
   .facts__g{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); }
   .fact{ padding:17px 24px 19px 24px; border-right:1px solid var(--rule-d); }
   .fact:first-child{ padding-left:0; }
-  .fact:last-child{ border-right:0; padding-right:0; transform:translateX(-50%);
-                     border-left:1px solid var(--rule-d); }
-  .fact:nth-last-child(2){ border-right:0; }
+  .fact:last-child{ border-right:0; padding-right:0; }
+  /* Club sits halfway toward Primary Foot; its own border-right would
+     float mid-air after the shift, so the divider lives on its left
+     edge instead, and Foot's own right border is dropped to match.
+     Only safe once all five facts share one row — below that, Club
+     and Foot can land in the same row and the shift would overlap it. */
+  @media (min-width:900px){
+    .fact:nth-child(3){ border-right:0; }
+    .fact:nth-child(4){ transform:translateX(-50%); border-left:1px solid var(--rule-d); border-right:0; }
+    .fact:nth-child(4) i{ white-space:nowrap; }
+  }
   .fact b{
     display:block; font-family:var(--disp); font-size:12.5px; font-weight:700;
     letter-spacing:.2em; text-transform:uppercase; color:var(--sky); margin-bottom:2px;

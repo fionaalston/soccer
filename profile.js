@@ -49,6 +49,7 @@ const PROFILE = {
     { label: "Position",  value: "Forward / Defender" },
     { label: "Primary Foot", value: "Left" },
     { label: "Club",      value: "De Anza Force 10G ECNL" },
+    { label: "GPA",       value: "4.08" },
   ],
 
   /* ---------- HIGHLIGHTS ----------

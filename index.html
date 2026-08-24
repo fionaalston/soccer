@@ -249,8 +249,11 @@
   .row__d{ font-family:var(--disp); font-weight:700; font-size:14.5px; letter-spacing:.1em;
            text-transform:uppercase; color:var(--sky-dim); white-space:nowrap; }
   .on-dark .row__d{ color:var(--sky); }
-  .row--sched{ grid-template-columns:auto 1fr; }
+  .row--sched{ grid-template-columns:132px 1fr; }
   .row--national .row__m{ color:var(--sky-dim); }
+  .row__t{ display:block; font-family:var(--body); font-weight:400; font-size:12.5px;
+           letter-spacing:normal; text-transform:none; color:var(--muted); margin-top:2px; }
+  .on-dark .row__t{ color:var(--muted-d); }
   .empty{ color:var(--muted); font-style:italic; padding:13px 0; border-bottom:1px solid var(--rule); margin:0; }
   .on-dark .empty{ color:var(--muted-d); border-bottom-color:var(--rule-d); }
   .subh{ font-family:var(--disp); font-weight:700; font-size:14px; letter-spacing:.2em;
@@ -487,7 +490,8 @@
     : '';
   const evrSched = l => (l&&l.length)
     ? '<ul class="rows">'+l.map(e=>'<li class="row row--sched'+(e.national?' row--national':'')+
-      '"><span class="row__d">'+esc(e.date)+'</span><span class="row__m">'+esc(e.name)+
+      '"><span class="row__d">'+esc(e.date)+(e.time?'<span class="row__t">'+esc(e.time)+'</span>':'')+
+      '</span><span class="row__m">'+esc(e.name)+
       (e.detail?' <span class="soft">'+esc(e.detail)+'</span>':'')+'</span></li>').join('')+'</ul>'
     : '';
   $('upcomingEvents').innerHTML = evrSched(ev.upcoming) ||

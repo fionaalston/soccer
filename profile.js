@@ -64,7 +64,7 @@ const PROFILE = {
 
   /* ---------- PERSONAL INFO ---------- */
   personal: [
-    { label: "Date of birth", value: "05/18/2010" },
+    { label: "Date of birth", value: "May 2010" },
     { label: "Height",        value: "5'3\"" },
     { label: "Weight",        value: "120 lbs" },
     { label: "Hometown",      value: "San Mateo, California" },

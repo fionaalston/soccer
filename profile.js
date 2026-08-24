@@ -88,7 +88,7 @@ const PROFILE = {
     school:     "Crystal Springs Uplands School",
     address:    "",
     classYear:  "Class of 2028 (Junior)",
-    gpa:        "4.08 unweighted",
+    gpa:        "4.08",
     courses: [
       "Honors Pre-Calculus/Calculus",
       "Honors Advanced Topics in Biology + Lab",
@@ -142,7 +142,30 @@ const PROFILE = {
   /* ---------- SHOWCASES & EVENTS ---------- */
   events: {
     upcoming: [
-      /* { name: "ECNL Showcase", detail: "San Diego", date: "Oct 2026" }, */
+      { name: "vs. Marin FC U17 ECNL",          detail: "De Anza College",              date: "Aug 22, 2026" },
+      { name: "vs. Mustang SC U17 ECNL",        detail: "Mustang Soccer Complex",       date: "Aug 29, 2026" },
+      { name: "vs. Placer United U17 ECNL",     detail: "De Anza College",              date: "Aug 30, 2026" },
+      { name: "vs. COSC U17 ECNL",              detail: "Edison High School Fields",    date: "Sep 12, 2026" },
+      { name: "vs. MVLA U17 ECNL",              detail: "De Anza College",              date: "Sep 19, 2026" },
+      { name: "vs. San Juan SC U17 ECNL",       detail: "San Juan Soccer Complex",      date: "Sep 20, 2026" },
+      { name: "vs. Bay Area Surf U17 ECNL",     detail: "De Anza College",              date: "Sep 26, 2026" },
+      { name: "vs. Davis Legacy U17 ECNL",      detail: "De Anza College",              date: "Sep 27, 2026" },
+      { name: "vs. Stanislaus Surf U17 ECNL",   detail: "De Anza College",              date: "Oct 3, 2026" },
+      { name: "vs. Santa Rosa United U17 ECNL", detail: "Trione Fields",                date: "Oct 17, 2026" },
+      { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "De Anza College",              date: "Oct 24, 2026" },
+      { name: "vs. Marin FC U17 ECNL",          detail: "Terra Linda High School",      date: "Oct 25, 2026" },
+      { name: "vs. COSC U17 ECNL",              detail: "De Anza College",              date: "Oct 31, 2026" },
+      { name: "vs. MVLA U17 ECNL",              detail: "Foothill College",             date: "Nov 7, 2026" },
+      { name: "ECNL Phoenix National Event",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Nov 13-15, 2026" },
+      { name: "vs. Placer United U17 ECNL",     detail: "Placer Valley Soccer Complex", date: "Mar 20, 2027" },
+      { name: "vs. Mustang SC U17 ECNL",        detail: "De Anza College",              date: "Mar 21, 2027" },
+      { name: "ECNL Phoenix National Event",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Apr 2-4, 2027" },
+      { name: "vs. San Juan SC U17 ECNL",       detail: "De Anza College",              date: "Apr 10, 2027" },
+      { name: "vs. Davis Legacy U17 ECNL",      detail: "Davis Legacy Soccer Complex",  date: "Apr 17, 2027" },
+      { name: "vs. Bay Area Surf U17 ECNL",     detail: "",                             date: "Apr 18, 2027" },
+      { name: "vs. Stanislaus Surf U17 ECNL",   detail: "Thomas Downey High School",    date: "Apr 24, 2027" },
+      { name: "vs. Santa Rosa United U17 ECNL", detail: "De Anza College",              date: "May 1, 2027" },
+      { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Val Vista Fields",             date: "May 8, 2027" },
     ],
     past: [
       { name: "NorCal PDP / Oshima Cup",          detail: "Japan",          date: "Aug 2026" },

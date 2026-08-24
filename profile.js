@@ -26,7 +26,7 @@ const PROFILE = {
   commitment: "",
 
   /* One line that makes the case. Set in italic serif under the name. */
-  positioning: "Speedy, left-footed forward who primarily plays wide on either flank, or secondarily as outside back, with four US Soccer Talent ID invitations and a NorCal PDP roster selection to play in the Oshima Cup in Hakodate, Japan.",
+  positioning: "Speedy, left-footed forward and defender who primarily plays winger, or secondarily as outside back, with multiple US Soccer Talent ID invitations and a NorCal PDP roster selection to play in Hakodate, Japan.",
 
   /* Hero portrait. A background-free cut-out (transparent PNG/WebP) reads
      best — she stands on the hero baseline against the green. Drop the file
@@ -49,7 +49,6 @@ const PROFILE = {
     { label: "Position",  value: "Forward / Defender" },
     { label: "Foot",      value: "Left" },
     { label: "Club",      value: "De Anza Force 10G ECNL" },
-    { label: "Height",    value: "5'3\"" },
   ],
 
   /* ---------- HIGHLIGHTS ----------
@@ -69,7 +68,7 @@ const PROFILE = {
     { label: "Height",        value: "5'3\"" },
     { label: "Weight",        value: "122 lbs" },
     { label: "Hometown",      value: "San Mateo, California" },
-    { label: "NCAA ID",       value: "" },   /* Add once registered with the Eligibility Center */
+    { label: "NCAA ID",       value: "2505617110" },
   ],
 
   /* Second photo, beside the personal info card. */
@@ -111,7 +110,7 @@ const PROFILE = {
       group: "Club Team",
       items: [
         { year: "",        text: "De Anza Force 10G ECNL" },
-        { year: "",        text: "Primary: Forward / Defender, left or right wing" },
+        { year: "",        text: "Primary: Forward, left or right wing" },
         { year: "",        text: "Secondary: Left back" },
       ],
     },
@@ -156,10 +155,10 @@ const PROFILE = {
       { name: "vs. Marin FC U17 ECNL",          detail: "Terra Linda High School",      date: "Oct 25, 2026",   time: "1:00 PM" },
       { name: "vs. COSC U17 ECNL",              detail: "De Anza College",              date: "Oct 31, 2026",   time: "TBD" },
       { name: "vs. MVLA U17 ECNL",              detail: "Foothill College",             date: "Nov 7, 2026",    time: "TBD" },
-      { name: "ECNL Phoenix National Event",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Nov 13-15, 2026", time: "TBD", national: true },
+      { name: "ECNL Phoenix National Showcase",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Nov 13-15, 2026", time: "TBD", national: true },
       { name: "vs. Placer United U17 ECNL",     detail: "Placer Valley Soccer Complex", date: "Mar 20, 2027",   time: "3:45 PM" },
       { name: "vs. Mustang SC U17 ECNL",        detail: "De Anza College",              date: "Mar 21, 2027",   time: "TBD" },
-      { name: "ECNL Phoenix National Event",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Apr 2-4, 2027", time: "TBD", national: true },
+      { name: "ECNL Phoenix National Showcase",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Apr 2-4, 2027", time: "TBD", national: true },
       { name: "vs. San Juan SC U17 ECNL",       detail: "De Anza College",              date: "Apr 10, 2027",   time: "TBD" },
       { name: "vs. Davis Legacy U17 ECNL",      detail: "Davis Legacy Soccer Complex",  date: "Apr 17, 2027",   time: "12:00 PM" },
       { name: "vs. Bay Area Surf U17 ECNL",     detail: "",                             date: "Apr 18, 2027",   time: "TBD" },
@@ -180,7 +179,7 @@ const PROFILE = {
         { name: "ECNL Showcase",           detail: "San Diego",      date: "Oct 2024" },
       ],
       otherShowcases: [
-        { name: "SUSA Girls College Showcase",      detail: "", date: "Feb 2026" },
+        { name: "SUSA College Showcase",      detail: "", date: "Feb 2026" },
         { name: "Pleasanton Rage College Showcase", detail: "", date: "Aug 2025" },
         { name: "San Diego Surf Cup",               detail: "", date: "Jul 2024" },
       ],

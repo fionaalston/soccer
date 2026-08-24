@@ -69,7 +69,7 @@ const PROFILE = {
     { label: "Height",        value: "5'3\"" },
     { label: "Weight",        value: "122 lbs" },
     { label: "Hometown",      value: "San Mateo, California" },
-    { label: "NCAA ID",       value: "2505617110" },
+    { label: "NCAA ID#",      value: "2505617110" },
   ],
 
   /* Second photo, beside the personal info card. */

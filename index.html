@@ -182,6 +182,12 @@
   }
   .badge img{ height:100px; width:auto; }
   .badge--img{ border:0; padding:0; }
+  /* Shrink and tighten just enough that all four badges stay on one
+     row down to the narrowest common phone width (~320px). */
+  @media (max-width:520px){
+    .badges{ gap:10px; }
+    .badge img{ height:72px; }
+  }
 
   /* ---------- buttons ---------- */
   .btn{
@@ -304,7 +310,10 @@
   .dl dt{ font-family:var(--disp); font-weight:700; font-size:13px; letter-spacing:.16em;
           text-transform:uppercase; color:var(--muted); }
   .dl dd{ margin:1px 0 0; font-weight:600; }
-  .contact-social{ display:flex; gap:12px; margin-top:22px; }
+  .contact-social{ display:flex; flex-wrap:wrap; gap:24px; margin-top:22px; }
+  .contact-social__item{ display:flex; align-items:center; gap:10px; }
+  .contact-social__item a:not(.icon){ color:var(--bone); font-weight:600; text-decoration:none; }
+  .contact-social__item a:not(.icon):hover{ color:var(--sky); }
   .dl dd a{ color:var(--ink); text-decoration:none; border-bottom:1px solid var(--sky-dim); word-break:break-word; }
   .dl dd a:hover{ background:rgba(125,200,236,.2); }
 
@@ -442,7 +451,12 @@
   const IC = {
     ig:'<svg viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2a6.6 6.6 0 100 13.2 6.6 6.6 0 000-13.2zm0 10.9a4.3 4.3 0 110-8.6 4.3 4.3 0 010 8.6zm6.9-11.1a1.55 1.55 0 11-3.1 0 1.55 1.55 0 013.1 0z"/></svg>',
     yt:'<svg viewBox="0 0 24 24"><path d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.8-.9-2.3-1C17 4 12 4 12 4s-5 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.2 7.6.2s5 0 7.8-.2c.5-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.8 15.2V8.9l6.4 3.2-6.4 3.1z"/></svg>',
-    mail:'<svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm10 7.2L3.8 6.6h16.4L12 12.2zM4 8.3v8.7h16V8.3l-8 5.5-8-5.5z"/></svg>'
+    mail:'<svg viewBox="0 0 24 24"><path d="M2 5h20v14H2V5zm10 7.2L3.8 6.6h16.4L12 12.2zM4 8.3v8.7h16V8.3l-8 5.5-8-5.5z"/></svg>',
+    igColor:'<svg viewBox="0 0 24 24"><defs><linearGradient id="igGrad" x1="0%" y1="100%" x2="100%" y2="0%">'+
+      '<stop offset="0%" stop-color="#f9ce34"/><stop offset="30%" stop-color="#ee2a7b"/>'+
+      '<stop offset="65%" stop-color="#bc1888"/><stop offset="100%" stop-color="#4f5bd5"/></linearGradient></defs>'+
+      '<path fill="url(#igGrad)" d="M12 2.2c3.2 0 3.6 0 4.9.07 1.2.05 1.8.25 2.2.42.6.22 1 .48 1.4.9.4.4.7.8.9 1.4.2.4.4 1 .4 2.2.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c0 1.2-.2 1.8-.4 2.2-.2.6-.5 1-.9 1.4-.4.4-.8.7-1.4.9-.4.2-1 .4-2.2.4-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2 0-1.8-.2-2.2-.4-.6-.2-1-.5-1.4-.9-.4-.4-.7-.8-.9-1.4-.2-.4-.4-1-.4-2.2-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c0-1.2.2-1.8.4-2.2.2-.6.5-1 .9-1.4.4-.4.8-.7 1.4-.9.4-.2 1-.4 2.2-.4C8.4 2.2 8.8 2.2 12 2.2zm0 3.2a6.6 6.6 0 100 13.2 6.6 6.6 0 000-13.2zm0 10.9a4.3 4.3 0 110-8.6 4.3 4.3 0 010 8.6zm6.9-11.1a1.55 1.55 0 11-3.1 0 1.55 1.55 0 013.1 0z"/></svg>',
+    ytColor:'<svg viewBox="0 0 24 24"><path fill="#FF0000" d="M23 7.5s-.2-1.6-.9-2.3c-.9-.9-1.8-.9-2.3-1C17 4 12 4 12 4s-5 0-7.8.2c-.4.1-1.4.1-2.3 1-.7.7-.9 2.3-.9 2.3S.8 9.4.8 11.3v1.4c0 1.9.2 3.8.2 3.8s.2 1.6.9 2.3c.9.9 2 .9 2.5 1 1.8.2 7.6.2 7.6.2s5 0 7.8-.2c.5-.1 1.4-.1 2.3-1 .7-.7.9-2.3.9-2.3s.2-1.9.2-3.8v-1.4c0-1.9-.2-3.8-.2-3.8zM9.8 15.2V8.9l6.4 3.2-6.4 3.1z"/><path fill="#fff" d="M9.8 15.2V8.9l6.4 3.2-6.4 3.1z"/></svg>'
   };
 
   /* hero */
@@ -562,8 +576,10 @@
     ['Phone', c.phone?'<a href="'+esc(tel(c.phone))+'">'+esc(c.phone)+'</a>':''],
   ]);
   $('contactSocial').innerHTML =
-    (s.instagram?'<a class="icon" href="'+esc(s.instagram)+'" target="_blank" rel="noopener" aria-label="Instagram">'+IC.ig+'</a>':'')+
-    (s.youtube  ?'<a class="icon" href="'+esc(s.youtube)+'" target="_blank" rel="noopener" aria-label="YouTube">'+IC.yt+'</a>':'');
+    (s.instagram?'<span class="contact-social__item"><a class="icon icon--brand" href="'+esc(s.instagram)+'" target="_blank" rel="noopener" aria-label="Instagram">'+IC.igColor+
+      '</a><a href="'+esc(s.instagram)+'" target="_blank" rel="noopener">fiona.alston.soccer</a></span>':'')+
+    (s.youtube  ?'<span class="contact-social__item"><a class="icon icon--brand" href="'+esc(s.youtube)+'" target="_blank" rel="noopener" aria-label="YouTube">'+IC.ytColor+
+      '</a><a href="'+esc(s.youtube)+'" target="_blank" rel="noopener">@Fiona-Alston-soccer</a></span>':'');
   $('contactList').querySelectorAll('dt').forEach(d=>d.style.color='var(--muted-d)');
   $('contactList').querySelectorAll('dd a').forEach(d=>d.style.color='var(--bone)');
   $('contactList').querySelectorAll('div').forEach(d=>d.style.borderBottomColor='rgba(125,200,236,.22)');

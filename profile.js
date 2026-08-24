@@ -165,6 +165,7 @@ const PROFILE = {
       { name: "vs. Stanislaus Surf U17 ECNL",   detail: "Thomas Downey High School",    date: "Apr 24, 2027",   time: "10:55 AM" },
       { name: "vs. Santa Rosa United U17 ECNL", detail: "De Anza College",              date: "May 1, 2027",    time: "TBD" },
       { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Val Vista Fields",             date: "May 8, 2027",    time: "TBD" },
+      { name: "ECNL North Carolina Showcase",   detail: "",                             date: "May 29-31, 2027", time: "TBD", national: true },
     ],
     previous: {
       international: [

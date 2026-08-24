@@ -38,8 +38,8 @@ const PROFILE = {
      Any badge without an image falls back to its text label. */
   badges: [
     { label: "De Anza Force", image: "force-logo.png" },
-    { label: "ECNL",          image: "" },
-    { label: "NorCal PDP",    image: "" },
+    { label: "ECNL",          image: "ecnl-logo.png" },
+    { label: "NorCal PDP",    image: "norcal-pdp-logo.png" },
   ],
 
   /* ---------- QUICK READ (band under hero) ---------- */

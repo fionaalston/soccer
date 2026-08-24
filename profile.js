@@ -47,7 +47,7 @@ const PROFILE = {
   keyFacts: [
     { label: "Grad year", value: "2028" },
     { label: "Position",  value: "Forward / Defender" },
-    { label: "Foot",      value: "Left" },
+    { label: "Primary Foot", value: "Left" },
     { label: "Club",      value: "De Anza Force 10G ECNL" },
   ],
 

@@ -133,8 +133,8 @@ const PROFILE = {
     {
       group: "High School",
       items: [
-        { year: "2025",    text: "WBAL Foothill Division League Champions — first place" },
-        { year: "2024-25", text: "All-League 2nd Team — West Bay Athletic League, Foothill Division" },
+        { year: "2025",    text: "Freshman Starter, Division League 1st Place Champions" },
+        { year: "2024-25", text: "Selected for All-League Team (Second)" },
       ],
     },
   ],
@@ -174,7 +174,7 @@ const PROFILE = {
         { name: "Cup No. 1",               detail: "Denmark", date: "Jul 2024" },
       ],
       nationalShowcases: [
-        { name: "ECNL North American Cup", detail: "Playoffs",       date: "2026, 2025" },
+        { name: "ECNL Playoffs",           detail: "North American Cup", date: "2026, 2025" },
         { name: "ECNL Showcase",           detail: "North Carolina", date: "May 2026, 2025" },
         { name: "ECNL Showcase",           detail: "Phoenix",        date: "Mar 2026, Nov 2025, Apr 2025" },
         { name: "ECNL Showcase",           detail: "San Diego",      date: "Oct 2024" },

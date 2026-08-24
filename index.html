@@ -68,21 +68,31 @@
     overflow:hidden; display:flex; align-items:flex-end;
     min-height:clamp(430px, 74vh, 660px);
   }
-  /* Cut-out portrait: stands on the hero baseline, right-aligned to the
-     content column. Never cropped — background-size:contain. */
+  /* Framed photo card: white backing behind the cutout, so any faint
+     matting fringe reads as intentional card border rather than a
+     halo against the dark hero. */
   .hero__photo{
-    position:absolute; z-index:2; top:0; bottom:0; left:auto;
-    right:max(0px, calc((100% - var(--max)) / 2));
-    width:min(46%, 520px);
+    position:absolute; z-index:2;
+    right:max(var(--gut), calc((100% - var(--max)) / 2 + var(--gut)));
+    bottom:clamp(90px,12vw,140px);
+    width:min(36%, 360px);
+    aspect-ratio:537 / 640;
+    background-color:var(--bone);
+    padding:14px;
+    border:6px solid var(--sky);
+    border-radius:10px;
+    box-shadow:0 24px 50px rgba(0,0,0,.4);
     background-size:contain;
-    background-position:right bottom;
+    background-position:center;
     background-repeat:no-repeat;
-    /* The source ends at her hip, so the hero's bottom edge would slice
-       her torso. Dissolve into the green instead of chopping. */
-    -webkit-mask-image:linear-gradient(to bottom,
-      #000 72%, rgba(0,0,0,.35) 90%, transparent 100%);
-    mask-image:linear-gradient(to bottom,
-      #000 72%, rgba(0,0,0,.35) 90%, transparent 100%);
+    background-origin:content-box;
+  }
+  .hero__photo-badge{
+    position:absolute; top:-16px; left:-16px; z-index:1;
+    background:var(--sky); color:var(--pitch);
+    font-family:var(--disp); font-weight:800; font-size:clamp(18px,2.4vw,24px);
+    letter-spacing:.04em; padding:8px 15px; border-radius:6px;
+    box-shadow:0 8px 18px rgba(0,0,0,.3);
   }
   .hero::after{
     content:""; position:absolute; inset:0; z-index:1;
@@ -90,20 +100,19 @@
       linear-gradient(to top, var(--pitch) 4%, rgba(7,59,92,.82) 42%, rgba(7,59,92,.30) 82%),
       linear-gradient(to right, rgba(7,59,92,.88), rgba(7,59,92,.10) 62%);
   }
-  /* Keep the headline clear of the figure once they sit side by side.
+  /* Keep the headline clear of the card once they sit side by side.
      The name is sized off the viewport, so ease it down too — otherwise
-     it runs under her at mid widths. */
+     it runs under it at mid widths. */
   @media (min-width:900px){
-    .hero__in{ padding-right:calc(var(--gut) + min(44%, 470px)); }
+    .hero__in{ padding-right:calc(var(--gut) + min(38%, 380px)); }
   }
-  /* Too narrow to stand beside the type — drop her behind it and even out
-     the scrim, which is weak up top where her face now lands. */
+  /* Too narrow to stand beside the type — stack the card below the
+     text instead of overlapping it. */
   @media (max-width:899px){
-    .hero__photo{ z-index:1; right:0; width:min(105%, 470px); opacity:.8; }
-    .hero::after{
-      z-index:2;
-      background:linear-gradient(to top,
-        var(--pitch) 5%, rgba(7,59,92,.88) 48%, rgba(7,59,92,.74) 100%);
+    .hero{ flex-direction:column-reverse; }
+    .hero__photo{
+      position:relative; z-index:1; right:auto; bottom:auto;
+      width:min(70%, 320px); margin:0 auto clamp(20px,4vw,32px);
     }
   }
   .hero__in{ position:relative; z-index:3; width:100%; padding-block:0 clamp(30px,5vw,52px); }
@@ -194,7 +203,8 @@
   .facts__g{ display:grid; grid-template-columns:repeat(auto-fit,minmax(140px,1fr)); }
   .fact{ padding:17px 24px 19px 24px; border-right:1px solid var(--rule-d); }
   .fact:first-child{ padding-left:0; }
-  .fact:last-child{ border-right:0; padding-right:0; transform:translateX(-50%); }
+  .fact:last-child{ border-right:0; padding-right:0; transform:translateX(-50%);
+                     border-left:1px solid var(--rule-d); }
   .fact:nth-last-child(2){ border-right:0; }
   .fact b{
     display:block; font-family:var(--disp); font-size:12.5px; font-weight:700;
@@ -414,6 +424,7 @@
 
   /* hero */
   if(P.heroPhoto) $('heroPhoto').style.backgroundImage='url("'+P.heroPhoto+'")';
+  if(P.number) $('heroPhoto').innerHTML = '<span class="hero__photo-badge">#'+esc(P.number)+'</span>';
   $('vert').textContent = P.eyebrow || '';
   $('hnum').textContent = [P.eyebrow, P.number ? '#'+P.number : ''].filter(Boolean).join('  \u2022  ');
   $('hname').innerHTML = '<span>'+esc(P.firstName)+'</span><span>'+esc(P.lastName)+'</span>';

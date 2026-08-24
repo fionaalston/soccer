@@ -12,9 +12,9 @@
 
 <style>
   :root{
-    --pitch:   #0C2A1E;
-    --pitch-2: #123A2A;
-    --pitch-3: #0A2118;
+    --pitch:   #0B1F3A;
+    --pitch-2: #14294F;
+    --pitch-3: #081527;
     --sky:     #7DC8EC;
     --sky-dim: #4E9EC4;
     --bone:    #FBFCFB;
@@ -87,8 +87,8 @@
   .hero::after{
     content:""; position:absolute; inset:0; z-index:1;
     background:
-      linear-gradient(to top, var(--pitch) 4%, rgba(12,42,30,.82) 42%, rgba(12,42,30,.30) 82%),
-      linear-gradient(to right, rgba(12,42,30,.88), rgba(12,42,30,.10) 62%);
+      linear-gradient(to top, var(--pitch) 4%, rgba(11,31,58,.82) 42%, rgba(11,31,58,.30) 82%),
+      linear-gradient(to right, rgba(11,31,58,.88), rgba(11,31,58,.10) 62%);
   }
   /* Keep the headline clear of the figure once they sit side by side.
      The name is sized off the viewport, so ease it down too — otherwise
@@ -103,7 +103,7 @@
     .hero::after{
       z-index:2;
       background:linear-gradient(to top,
-        var(--pitch) 5%, rgba(12,42,30,.88) 48%, rgba(12,42,30,.74) 100%);
+        var(--pitch) 5%, rgba(11,31,58,.88) 48%, rgba(11,31,58,.74) 100%);
     }
   }
   .hero__in{ position:relative; z-index:3; width:100%; padding-block:0 clamp(30px,5vw,52px); }

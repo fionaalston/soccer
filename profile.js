@@ -17,16 +17,16 @@ const PROFILE = {
   firstName: "Fiona",
   lastName:  "Alston",
   number:    "17",
-  eyebrow:   "Left-footed forward",
+  eyebrow:   "Left-footed forward / defender",
   club:      "De Anza Force 10G ECNL",
-  role:      "Forward #17",
+  role:      "Forward / Defender #17",
   classYear: "Class of 2028",
 
   /* Shows in the hero when filled. Leave "" until it happens. */
   commitment: "",
 
   /* One line that makes the case. Set in italic serif under the name. */
-  positioning: "Speedy, left-footed forward who primarily plays wide on either flank, or as secondarily as outside back, with four US Soccer Talent ID invitations and a NorCal PDP international call-up.",
+  positioning: "Speedy, left-footed forward who primarily plays wide on either flank, or secondarily as outside back, with four US Soccer Talent ID invitations and a NorCal PDP roster selection to play in the Oshima Cup in Hakodate, Japan.",
 
   /* Hero portrait. A background-free cut-out (transparent PNG/WebP) reads
      best — she stands on the hero baseline against the green. Drop the file
@@ -46,7 +46,7 @@ const PROFILE = {
   /* ---------- QUICK READ (band under hero) ---------- */
   keyFacts: [
     { label: "Grad year", value: "2028" },
-    { label: "Position",  value: "Forward" },
+    { label: "Position",  value: "Forward / Defender" },
     { label: "Foot",      value: "Left" },
     { label: "Club",      value: "De Anza Force 10G ECNL" },
     { label: "Height",    value: "5'3\"" },
@@ -109,7 +109,7 @@ const PROFILE = {
       group: "Club Team",
       items: [
         { year: "",        text: "De Anza Force 10G ECNL" },
-        { year: "",        text: "Primary: Forward, left or right wing" },
+        { year: "",        text: "Primary: Forward / Defender, left or right wing" },
         { year: "",        text: "Secondary: Left back" },
       ],
     },
@@ -158,6 +158,9 @@ const PROFILE = {
 
   /* ---------- ARTICLES ---------- */
   articles: [
+    { year: "2026", title: "ECNL Girls Northern Cal Players to Watch",
+      source: "TopDrawerSoccer",
+      url: "https://www.topdrawersoccer.com/club-soccer-articles/ecnl-girls-northern-cal-players-to-watch_aid56298" },
     { year: "2026", title: "2028 Midfielders / Forwards to Watch Ahead of ECNL North Carolina",
       source: "Prep Soccer",
       url: "https://prepsoccer.com/2026/05/2028-midfielders-to-watch-ahead-of-ecnl-north-carolina/" },
@@ -171,6 +174,7 @@ const PROFILE = {
 
   /* ---------- CLUBS & VOLUNTEER WORK ---------- */
   clubs: [
+    { year: "2026-27", text: "Co-President, Black Student Union" },
     { year: "2025-26", text: "Vice President, Red Cross Community Service" },
     { year: "2025-26", text: "Selected for Student Academic Council" },
     { year: "2025",    text: "Writer, TrailBlazeHERS — women's sports magazine" },

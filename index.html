@@ -228,9 +228,15 @@
   .fact i{ font-style:normal; font-size:16.5px; font-weight:600; }
 
   /* ---------- sections ---------- */
-  .sec{ padding-block:clamp(46px,7vw,86px); }
+  .sec{ padding-block:clamp(28px,4.2vw,48px); }
   .sec--dark{ background:var(--pitch); color:var(--bone); }
   .sec--stone{ background:var(--stone); }
+  /* Tighten specific section-to-section transitions so they read as
+     flowing right into each other instead of clearly separate blocks. */
+  #highlights{ padding-bottom:12px; }
+  #personalInfo{ padding-top:12px; }
+  #academicsBlock{ padding-bottom:12px; }
+  #upcoming{ padding-top:12px; }
 
   /* ---------- highlights ---------- */
   .frame{
@@ -356,7 +362,7 @@
   <div id="hl"></div>
 </section>
 
-<section class="sec sec--stone">
+<section class="sec sec--stone" id="personalInfo">
   <div class="wrap">
     <h2 class="axis">Personal info</h2>
     <div class="pcard">
@@ -381,7 +387,7 @@
   </div>
 </section>
 
-<section class="sec wrap">
+<section class="sec wrap" id="academicsBlock">
   <div class="cols3">
     <div>
       <h2 class="axis">Academics</h2>

@@ -37,7 +37,7 @@ const PROFILE = {
      Add logo files next to index.html and reference them below.
      Any badge without an image falls back to its text label. */
   badges: [
-    { label: "De Anza Force", image: "" },
+    { label: "De Anza Force", image: "force-logo.png" },
     { label: "ECNL",          image: "" },
     { label: "NorCal PDP",    image: "" },
   ],

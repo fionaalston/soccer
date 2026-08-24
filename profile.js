@@ -26,7 +26,7 @@ const PROFILE = {
   commitment: "",
 
   /* One line that makes the case. Set in italic serif under the name. */
-  positioning: "Left-footed forward who plays wide on either flank, with four US Soccer Talent ID call-ups and a NorCal PDP state selection since 2025.",
+  positioning: "Left-footed forward who plays wide on either flank, with four US Soccer Talent ID invitations and a NorCal PDP state selection since 2025.",
 
   /* Hero portrait. A background-free cut-out (transparent PNG/WebP) reads
      best — she stands on the hero baseline against the green. Drop the file

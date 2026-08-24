@@ -342,11 +342,16 @@
         <div id="soccer"></div>
       </div>
       <div>
-        <h2 class="axis">Showcases &amp; events</h2>
+        <h2 class="axis">Previous events</h2>
         <div id="events"></div>
       </div>
     </div>
   </div>
+</section>
+
+<section class="sec wrap" id="upcoming">
+  <h2 class="axis">Upcoming game &amp; showcase schedule</h2>
+  <div id="upcomingEvents"></div>
 </section>
 
 <section class="sec wrap">
@@ -477,9 +482,15 @@
     ? '<ul class="rows">'+l.map(e=>'<li class="row"><span class="row__m">'+esc(e.name)+
       (e.detail?' <span class="soft">'+esc(e.detail)+'</span>':'')+'</span><span class="row__d">'+
       esc(e.date)+'</span></li>').join('')+'</ul>'
-    : '<p class="empty">Next season\u2019s schedule posting soon.</p>';
-  $('events').innerHTML = '<p class="subh">Upcoming</p>'+evr(ev.upcoming)+
-                          '<p class="subh">Previous</p>'+evr(ev.past);
+    : '';
+  $('upcomingEvents').innerHTML = evr(ev.upcoming) ||
+    '<p class="empty">Next season\u2019s schedule posting soon.</p>';
+
+  const prev = ev.previous||{};
+  const evGroup = (label, l) => l && l.length ? '<p class="subh">'+label+'</p>'+evr(l) : '';
+  $('events').innerHTML = evGroup('International', prev.international)+
+                          evGroup('National showcases', prev.nationalShowcases)+
+                          evGroup('Other showcases', prev.otherShowcases);
 
   /* academics */
   const a = P.academics||{};

@@ -167,18 +167,24 @@ const PROFILE = {
       { name: "vs. Santa Rosa United U17 ECNL", detail: "De Anza College",              date: "May 1, 2027" },
       { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Val Vista Fields",             date: "May 8, 2027" },
     ],
-    past: [
-      { name: "NorCal PDP / Oshima Cup",          detail: "Japan",          date: "Aug 2026" },
-      { name: "ECNL North American Cup",          detail: "Playoffs",       date: "2026, 2025" },
-      { name: "ECNL Showcase",                    detail: "North Carolina", date: "May 2026, 2025" },
-      { name: "SUSA Girls College Showcase",      detail: "",               date: "Feb 2026" },
-      { name: "ECNL Showcase",                    detail: "Phoenix",        date: "Mar 2026, Nov 2025, Apr 2025" },
-      { name: "Pleasanton Rage College Showcase", detail: "",               date: "Aug 2025" },
-      { name: "ECNL Showcase",                    detail: "San Diego",      date: "Oct 2024" },
-      { name: "Gothia Cup",                       detail: "Sweden",         date: "Jul 2024" },
-      { name: "Cup No. 1",                        detail: "Denmark",        date: "Jul 2024" },
-      { name: "San Diego Surf Cup",               detail: "",               date: "Jul 2024" },
-    ],
+    previous: {
+      international: [
+        { name: "NorCal PDP / Oshima Cup", detail: "Japan",   date: "Aug 2026" },
+        { name: "Gothia Cup",              detail: "Sweden",  date: "Jul 2024" },
+        { name: "Cup No. 1",               detail: "Denmark", date: "Jul 2024" },
+      ],
+      nationalShowcases: [
+        { name: "ECNL North American Cup", detail: "Playoffs",       date: "2026, 2025" },
+        { name: "ECNL Showcase",           detail: "North Carolina", date: "May 2026, 2025" },
+        { name: "ECNL Showcase",           detail: "Phoenix",        date: "Mar 2026, Nov 2025, Apr 2025" },
+        { name: "ECNL Showcase",           detail: "San Diego",      date: "Oct 2024" },
+      ],
+      otherShowcases: [
+        { name: "SUSA Girls College Showcase",      detail: "", date: "Feb 2026" },
+        { name: "Pleasanton Rage College Showcase", detail: "", date: "Aug 2025" },
+        { name: "San Diego Surf Cup",               detail: "", date: "Jul 2024" },
+      ],
+    },
   },
 
   /* ---------- ARTICLES ---------- */

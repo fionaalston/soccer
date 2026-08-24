@@ -477,13 +477,9 @@
   let h = '';
 
   if(vids.length){
-    h += frame(EMB+encodeURIComponent(vids[0].videoId), vids[0].title) + cap(vids[0]);
-    const rest = vids.slice(1);
-    if(rest.length){
-      h += '<div class="vgrid" style="margin-top:34px">'+rest.map(v =>
-        '<div class="vcard">'+frame(EMB+encodeURIComponent(v.videoId), v.title)+cap(v)+'</div>'
-      ).join('')+'</div>';
-    }
+    h += '<div class="vgrid">'+vids.map(v =>
+      '<div class="vcard">'+frame(EMB+encodeURIComponent(v.videoId), v.title)+cap(v)+'</div>'
+    ).join('')+'</div>';
     if(plSrc){
       h += '<div style="margin-top:44px"><p class="subh">Full film library</p>'+
         frame(plSrc, 'Full film library')+

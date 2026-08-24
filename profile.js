@@ -54,11 +54,11 @@ const PROFILE = {
 
   /* ---------- HIGHLIGHTS ----------
      Add a new reel by copying a block. videoId is the part of a
-     YouTube URL after "v=". The first video plays inline; the
-     rest show as cards. */
+     YouTube URL after "v=" (or after youtu.be/). All videos with an
+     id show side by side as equal-size cards. */
   videos: [
-    { videoId: "", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
-    { videoId: "", title: "2026 Spring Soccer Highlights",       caption: "De Anza Force 10G ECNL" },
+    { videoId: "0uzCDY_ATtc", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
+    { videoId: "tSy-gjCPsmM", title: "2026 Spring Soccer Highlights",       caption: "De Anza Force 10G ECNL" },
   ],
   channelPlaylist: "UUgXVdyow3k-qL3DlXNdd74A",
   channelUrl: "https://www.youtube.com/@fiona-alston-soccer",

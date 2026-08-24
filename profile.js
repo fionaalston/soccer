@@ -39,6 +39,7 @@ const PROFILE = {
   badges: [
     { label: "De Anza Force", image: "force-logo.png" },
     { label: "ECNL",          image: "ecnl-logo.png" },
+    { label: "US Soccer",     image: "us-soccer-logo.png" },
     { label: "NorCal PDP",    image: "norcal-pdp-logo.png" },
   ],
 

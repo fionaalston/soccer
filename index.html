@@ -197,8 +197,8 @@
   .btn--out:hover{ background:var(--bone); color:var(--pitch); border-color:var(--bone); }
   .btn--dark{ background:var(--pitch); color:var(--bone); border-color:var(--pitch); }
   .btn--dark:hover{ background:transparent; color:var(--pitch); }
-  .btn--yt{ padding-left:56px; padding-right:56px; }
-  .btn--yt img{ height:22px; width:auto; }
+  .btn--yt{ padding:24px 112px; font-size:30px; gap:18px; }
+  .btn--yt img{ height:44px; width:auto; }
 
   /* ---------- fact band ---------- */
   .facts{ background:var(--pitch-3); color:var(--bone); }
@@ -482,7 +482,6 @@
     ).join('')+'</div>';
     if(plSrc){
       h += '<div style="margin-top:44px"><p class="subh">Full film library</p>'+
-        frame(plSrc, 'Full film library')+
         '<p class="vsub">Every reel on the channel, newest first.</p></div>';
     }
   } else if(plSrc){

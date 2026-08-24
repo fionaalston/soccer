@@ -57,8 +57,8 @@ const PROFILE = {
      YouTube URL after "v=" (or after youtu.be/). All videos with an
      id show side by side as equal-size cards. */
   videos: [
-    { videoId: "0uzCDY_ATtc", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
-    { videoId: "tSy-gjCPsmM", title: "2026 Spring Soccer Highlights",       caption: "De Anza Force 10G ECNL" },
+    { videoId: "0uzCDY_ATtc", title: "2026 Playoffs Highlights",           caption: "De Anza Force 10G ECNL" },
+    { videoId: "tSy-gjCPsmM", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
   ],
   channelPlaylist: "UUgXVdyow3k-qL3DlXNdd74A",
   channelUrl: "https://www.youtube.com/@fiona-alston-soccer",

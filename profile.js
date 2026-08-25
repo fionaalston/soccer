@@ -204,12 +204,18 @@ const PROFILE = {
 
   /* ---------- CLUBS & VOLUNTEER WORK ---------- */
   clubs: [
-    { year: "2025",    text: "Writer, TrailBlazeHERS — women's sports magazine" },
-    { year: "2025-26", text: "Selected, Student Academic Council" },
-    { year: "2025-26", text: "Vice President, Red Cross Community Service" },
-    { year: "2026-27", text: "Selected, Student Academic Council" },
-    { year: "2026-27", text: "Co-President, Red Cross Community Service" },
-    { year: "2026-27", text: "Co-President, Black Student Union" },
+    { year: "2026-27", items: [
+      "Co-President, Black Student Union",
+      "Co-President, Red Cross Community Service",
+      "Selected, Student Academic Council",
+    ] },
+    { year: "2025-26", items: [
+      "Vice President, Red Cross Community Service",
+      "Selected, Student Academic Council",
+    ] },
+    { year: "2025", items: [
+      "Writer, TrailBlazeHERS — women's sports magazine",
+    ] },
   ],
 
   /* ---------- COACHING REFERENCES ----------

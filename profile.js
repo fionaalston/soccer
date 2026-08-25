@@ -57,7 +57,7 @@ const PROFILE = {
      YouTube URL after "v=" (or after youtu.be/). All videos with an
      id show side by side as equal-size cards. */
   videos: [
-    { videoId: "0uzCDY_ATtc", title: "2026 Playoffs Highlights",           caption: "De Anza Force 10G ECNL" },
+    { videoId: "0uzCDY_ATtc", title: "2026 ECNL Playoffs Highlights",      caption: "De Anza Force 10G ECNL" },
     { videoId: "tSy-gjCPsmM", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
   ],
   channelPlaylist: "UUgXVdyow3k-qL3DlXNdd74A",
@@ -205,6 +205,7 @@ const PROFILE = {
   /* ---------- CLUBS & VOLUNTEER WORK ---------- */
   clubs: [
     { year: "2026-27", text: "Co-President, Black Student Union" },
+    { year: "2026-27", text: "Co-President, Red Cross Community Service" },
     { year: "2025-26", text: "Vice President, Red Cross Community Service" },
     { year: "2026-27", text: "Selected, Student Academic Council" },
     { year: "2025-26", text: "Selected, Student Academic Council" },

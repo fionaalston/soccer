@@ -274,6 +274,10 @@
   .ylist{ list-style:none; margin:0; padding:0; }
   .ylist li{ padding:7px 0; }
   .ylist b{ font-weight:700; color:var(--ink); }
+  /* When a group mixes dated and undated lines, align every line's
+     text to the same column so continuation lines (no year) line up
+     under the text of the line above instead of starting flush left. */
+  .ylist--dated li{ display:grid; grid-template-columns:72px 1fr; column-gap:6px; align-items:baseline; }
   .on-dark .ylist b{ color:var(--sky); }
   .ylist a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--sky-dim); }
   .ylist a:hover{ background:rgba(125,200,236,.18); }
@@ -527,10 +531,13 @@
   $('personal').innerHTML = dl((P.personal||[]).map(x=>[x.label, esc(x.value)]));
 
   /* soccer */
-  $('soccer').innerHTML = (P.soccer||[]).map(g =>
-    '<div class="grp"><p class="grp__h">'+esc(g.group)+'</p><ul class="ylist">'+
-    g.items.map(i=>'<li>'+(i.year?'<b>'+esc(i.year)+':</b> ':'')+esc(i.text)+'</li>').join('')+
-    '</ul></div>').join('');
+  $('soccer').innerHTML = (P.soccer||[]).map(g => {
+    const dated = g.items.some(i=>i.year);
+    return '<div class="grp"><p class="grp__h">'+esc(g.group)+'</p><ul class="ylist'+(dated?' ylist--dated':'')+'">'+
+      g.items.map(i=>'<li>'+(dated?'<b>'+(i.year?esc(i.year)+':':'')+'</b>':(i.year?'<b>'+esc(i.year)+':</b> ':''))+
+        '<span>'+esc(i.text)+'</span></li>').join('')+
+      '</ul></div>';
+  }).join('');
 
   /* events */
   const ev = P.events||{};

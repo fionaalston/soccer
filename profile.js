@@ -131,7 +131,8 @@ const PROFILE = {
     {
       group: "High School",
       items: [
-        { year: "2025",    text: "Freshman Starter, Division League 1st Place Champions" },
+        { year: "2025",    text: "Freshman Starter, Varsity Girls Soccer" },
+        { year: "",        text: "Division League 1st Place Champions" },
         { year: "2024-25", text: "Selected for All-League Team (Second)" },
       ],
     },

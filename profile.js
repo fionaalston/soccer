@@ -146,7 +146,7 @@ const PROFILE = {
       { name: "vs. Placer United U17 ECNL",     detail: "De Anza College",              date: "Aug 30, 2026",   time: "11:00 AM" },
       { name: "vs. COSC U17 ECNL",              detail: "Edison High School Fields",    date: "Sep 12, 2026",   time: "10:00 AM" },
       { name: "vs. MVLA U17 ECNL",              detail: "De Anza College",              date: "Sep 19, 2026",   time: "12:00 PM" },
-      { name: "vs. San Juan SC U17 ECNL",       detail: "San Juan Soccer Complex",      date: "Sep 20, 2026",   time: "5:00 PM" },
+      { name: "vs. San Juan SC U17 ECNL",       detail: "San Juan Soccer Complex",      date: "Sep 20, 2026",   time: "TBD" },
       { name: "vs. Bay Area Surf U17 ECNL",     detail: "De Anza College",              date: "Sep 26, 2026",   time: "TBD" },
       { name: "vs. Davis Legacy U17 ECNL",      detail: "De Anza College",              date: "Sep 27, 2026",   time: "4:00 PM" },
       { name: "vs. Stanislaus Surf U17 ECNL",   detail: "De Anza College",              date: "Oct 3, 2026",    time: "TBD" },

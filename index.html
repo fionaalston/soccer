@@ -568,7 +568,7 @@
     [a.school,a.address,a.classYear,a.gpa?'GPA: '+a.gpa:''].filter(Boolean)
       .map(x=>'<li>'+esc(x)+'</li>').join('')+'</ul></div>'+
     ((a.courses||[]).length ? '<div class="grp"><p class="grp__h">Advanced coursework</p><ul class="ylist">'+
-      a.courses.map(x=>'<li>'+esc(x).replace(/^(Honors|College Prep|Advanced Projects)\b/, '<b>$1</b>')+'</li>').join('')+'</ul></div>' : '')+
+      a.courses.map(x=>'<li>'+esc(x).replace(/^(Honors|College Prep|Advanced Projects)\b/, '<i>$1</i>')+'</li>').join('')+'</ul></div>' : '')+
     ((a.transcripts||[]).length ? '<div class="grp"><p class="grp__h">Transcripts</p><ul class="ylist">'+
       a.transcripts.map(t=>'<li><a href="'+esc(t.url)+'" target="_blank" rel="noopener">'+
       esc(t.label)+'</a></li>').join('')+'</ul></div>' : '');

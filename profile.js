@@ -204,7 +204,6 @@ const PROFILE = {
   clubs: [
     { year: "2026-27", items: [
       "Co-President, Black Student Union",
-      "Co-President, Red Cross Community Service",
       "Selected, Student Academic Council",
     ] },
     { year: "2025-26", items: [

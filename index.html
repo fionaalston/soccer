@@ -131,7 +131,7 @@
 
   .topbar{
     position:relative; z-index:4;
-    display:flex; justify-content:flex-end; gap:12px;
+    display:flex; justify-content:flex-end; align-items:center; gap:12px;
     padding-block:20px;
   }
   .icon{
@@ -485,7 +485,7 @@
   $('topbar').innerHTML =
     (s.instagram?'<a class="icon" href="'+esc(s.instagram)+'" target="_blank" rel="noopener" aria-label="Instagram">'+IC.ig+'</a>':'')+
     (s.youtube  ?'<a class="icon" href="'+esc(s.youtube)+'" target="_blank" rel="noopener" aria-label="YouTube">'+IC.yt+'</a>':'')+
-    (c.email    ?'<a class="icon" href="mailto:'+esc(c.email)+'" aria-label="Email">'+IC.mail+'</a>':'');
+    (c.email    ?'<a class="icon" href="#contact" aria-label="Contact">'+IC.mail+'</a>':'');
 
   $('badges').innerHTML = (P.badges||[]).map(b => b.image
     ? '<span class="badge badge--img"><img src="'+esc(b.image)+'" alt="'+esc(b.label)+'"></span>'

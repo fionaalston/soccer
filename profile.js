@@ -93,7 +93,6 @@ const PROFILE = {
       "Honors Mandarin V",
       "Honors Advanced Topics History/Government",
       "College Prep English III",
-      "Advanced Projects Glazing/Sculpture",
     ],
     /* Upload transcript PDFs next to index.html and link them. */
     transcripts: [
@@ -141,7 +140,6 @@ const PROFILE = {
   /* ---------- SHOWCASES & EVENTS ---------- */
   events: {
     upcoming: [
-      { name: "vs. Cal Odyssey U17 ECNL",       detail: "Edison High School Fields, Fresno, CA",    date: "Sep 12, 2026",   time: "10:00 AM" },
       { name: "vs. MVLA U17 ECNL",              detail: "De Anza College, Cupertino, CA",              date: "Sep 19, 2026",   time: "12:00 PM" },
       { name: "vs. San Juan SC U17 ECNL",       detail: "San Juan Soccer Complex, Rancho Cordova, CA",      date: "Sep 20, 2026",   time: "11:00 AM" },
       { name: "vs. Bay Area Surf U17 ECNL",     detail: "De Anza College, Cupertino, CA",              date: "Sep 26, 2026",   time: "12:00 PM" },

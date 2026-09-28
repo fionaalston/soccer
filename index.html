@@ -300,6 +300,11 @@
   .on-dark .row__d{ color:var(--sky); }
   .row--sched{ grid-template-columns:132px 1fr; }
   .row--national .row__m{ color:var(--sky-dim); }
+  .row--result{ grid-template-columns:80px 1fr; }
+  .row--result .row__d{ font-size:16px; }
+  .row--result.result--w .row__d{ color:var(--sky-dim); }
+  .row--result.result--l .row__d{ color:var(--muted); }
+  .row--result.result--t .row__d{ color:var(--muted); }
   .row__t{ display:block; font-family:var(--body); font-weight:400; font-size:12.5px;
            letter-spacing:normal; text-transform:none; color:var(--muted); margin-top:2px; }
   .on-dark .row__t{ color:var(--muted-d); }
@@ -422,6 +427,11 @@
       <ul class="ylist" id="clubs"></ul>
     </div>
   </div>
+</section>
+
+<section class="sec wrap" id="seasonResults">
+  <h2 class="axis">2026-27 season results</h2>
+  <div id="results"></div>
 </section>
 
 <section class="sec wrap" id="upcoming">
@@ -554,6 +564,13 @@
     : '';
   $('upcomingEvents').innerHTML = evrSched(ev.upcoming) ||
     '<p class="empty">Next season\u2019s schedule posting soon.</p>';
+
+  const results = P.results||[];
+  $('results').innerHTML = results.length
+    ? '<ul class="rows">'+results.map(r=>'<li class="row row--sched row--result result--'+esc(r.result.toLowerCase())+
+      '"><span class="row__d">'+esc(r.result)+' '+esc(r.score)+'</span><span class="row__m">'+esc(r.name)+
+      (r.detail?' <span class="soft">'+esc(r.detail)+'</span>':'')+'</span></li>').join('')+'</ul>'
+    : '<p class="empty">Results posting as the season goes.</p>';
 
   const prev = ev.previous||{};
   const evGroup = (label, l) => l && l.length ? '<div class="grp"><p class="grp__h">'+label+'</p>'+evr(l)+'</div>' : '';

@@ -137,13 +137,20 @@ const PROFILE = {
     },
   ],
 
+  /* ---------- SEASON RESULTS ----------
+     Add a game here as it's played, newest first. result is "W", "L", or "T". */
+  results: [
+    { name: "vs. San Juan SC U17 ECNL",       detail: "",   result: "W", score: "1-0" },
+    { name: "vs. MVLA U17 ECNL",              detail: "",   result: "W", score: "3-2" },
+    { name: "vs. Cal Odyssey U17 ECNL",       detail: "",   result: "W", score: "7-1" },
+    { name: "vs. Placer United U17 ECNL",     detail: "",   result: "W", score: "2-1" },
+    { name: "vs. Mustang SC U17 ECNL",        detail: "",   result: "T", score: "1-1" },
+    { name: "vs. Marin FC U17 ECNL",          detail: "",   result: "W", score: "6-0" },
+  ],
+
   /* ---------- SHOWCASES & EVENTS ---------- */
   events: {
     upcoming: [
-      { name: "vs. MVLA U17 ECNL",              detail: "De Anza College, Cupertino, CA",              date: "Sep 19, 2026",   time: "12:00 PM" },
-      { name: "vs. San Juan SC U17 ECNL",       detail: "San Juan Soccer Complex, Rancho Cordova, CA",      date: "Sep 20, 2026",   time: "11:00 AM" },
-      { name: "vs. Bay Area Surf U17 ECNL",     detail: "De Anza College, Cupertino, CA",              date: "Sep 26, 2026",   time: "12:00 PM" },
-      { name: "vs. Davis Legacy U17 ECNL",      detail: "Kathleen MacDonald High School, San Jose, CA", date: "Sep 27, 2026",  time: "12:00 PM" },
       { name: "vs. Stanislaus Surf U17 ECNL",   detail: "De Anza College, Cupertino, CA",              date: "Oct 3, 2026",    time: "11:00 AM" },
       { name: "vs. Santa Rosa United U17 ECNL", detail: "Trione Fields, Santa Rosa, CA",                date: "Oct 17, 2026",   time: "11:00 AM" },
       { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Val Vista Park, Pleasanton, CA",               date: "Oct 24, 2026",   time: "9:00 AM" },

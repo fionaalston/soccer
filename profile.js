@@ -140,12 +140,12 @@ const PROFILE = {
   /* ---------- SEASON RESULTS ----------
      Add a game here as it's played, newest first. result is "W", "L", or "T". */
   results: [
-    { name: "vs. San Juan SC U17 ECNL",       detail: "",   result: "W", score: "1-0" },
-    { name: "vs. MVLA U17 ECNL",              detail: "",   result: "W", score: "3-2" },
-    { name: "vs. Cal Odyssey U17 ECNL",       detail: "",   result: "W", score: "7-1" },
-    { name: "vs. Placer United U17 ECNL",     detail: "",   result: "W", score: "2-1" },
-    { name: "vs. Mustang SC U17 ECNL",        detail: "",   result: "T", score: "1-1" },
-    { name: "vs. Marin FC U17 ECNL",          detail: "",   result: "W", score: "6-0" },
+    { name: "vs. San Juan SC U17 ECNL",       detail: "Sep 20, 2026", result: "W", score: "1-0" },
+    { name: "vs. MVLA U17 ECNL",              detail: "Sep 19, 2026", result: "W", score: "3-2" },
+    { name: "vs. Cal Odyssey U17 ECNL",       detail: "Sep 12, 2026", result: "W", score: "7-1" },
+    { name: "vs. Placer United U17 ECNL",     detail: "Aug 30, 2026", result: "W", score: "2-1" },
+    { name: "vs. Mustang SC U17 ECNL",        detail: "Aug 29, 2026", result: "T", score: "1-1" },
+    { name: "vs. Marin FC U17 ECNL",          detail: "Aug 22, 2026", result: "W", score: "6-0" },
   ],
 
   /* ---------- SHOWCASES & EVENTS ---------- */

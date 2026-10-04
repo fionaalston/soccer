@@ -140,6 +140,7 @@ const PROFILE = {
   /* ---------- SEASON RESULTS ----------
      Add a game here as it's played, newest first. result is "W", "L", or "T". */
   results: [
+    { name: "vs. Stanislaus Surf U17 ECNL",   detail: "Oct 3, 2026",  result: "W", score: "7-0" },
     { name: "vs. San Juan SC U17 ECNL",       detail: "Sep 20, 2026", result: "W", score: "1-0" },
     { name: "vs. MVLA U17 ECNL",              detail: "Sep 19, 2026", result: "W", score: "3-2" },
     { name: "vs. Cal Odyssey U17 ECNL",       detail: "Sep 12, 2026", result: "W", score: "7-1" },
@@ -151,7 +152,6 @@ const PROFILE = {
   /* ---------- SHOWCASES & EVENTS ---------- */
   events: {
     upcoming: [
-      { name: "vs. Stanislaus Surf U17 ECNL",   detail: "De Anza College, Cupertino, CA",              date: "Oct 3, 2026",    time: "11:00 AM" },
       { name: "vs. Santa Rosa United U17 ECNL", detail: "Trione Fields, Santa Rosa, CA",                date: "Oct 17, 2026",   time: "11:00 AM" },
       { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Val Vista Park, Pleasanton, CA",               date: "Oct 24, 2026",   time: "9:00 AM" },
       { name: "vs. Marin FC U17 ECNL",          detail: "Terra Linda High School, San Rafael, CA",      date: "Oct 25, 2026",   time: "1:00 PM" },

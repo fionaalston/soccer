@@ -59,6 +59,7 @@ const PROFILE = {
   videos: [
     { videoId: "0uzCDY_ATtc", title: "2026 ECNL Playoffs Highlights",      caption: "De Anza Force 10G ECNL" },
     { videoId: "tSy-gjCPsmM", title: "2026 ECNL North Carolina Highlights", caption: "De Anza Force 10G ECNL" },
+    { videoId: "GQHniXDnNUc", title: "Aug–Sept 2026 Highlights",            caption: "De Anza Force 10G ECNL" },
   ],
   channelPlaylist: "UUgXVdyow3k-qL3DlXNdd74A",
   channelUrl: "https://www.youtube.com/@fiona-alston-soccer",

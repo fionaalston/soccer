@@ -31,7 +31,7 @@ const PROFILE = {
   /* Hero portrait. A background-free cut-out (transparent PNG/WebP) reads
      best — she stands on the hero baseline against the green. Drop the file
      next to index.html, or paste any image URL. */
-  heroPhoto: "fiona-hero.webp",
+  heroPhoto: "fiona-hero-3.webp",
 
   /* ---------- BADGES ----------
      Add logo files next to index.html and reference them below.

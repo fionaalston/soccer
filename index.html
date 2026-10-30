@@ -277,7 +277,8 @@
   /* When a group mixes dated and undated lines, align every line's
      text to the same column so continuation lines (no year) line up
      under the text of the line above instead of starting flush left. */
-  .ylist--dated li{ display:grid; grid-template-columns:72px 1fr; column-gap:6px; align-items:baseline; }
+  .ylist--dated li{ display:grid; grid-template-columns:84px 1fr; column-gap:6px; align-items:baseline; }
+  .ylist--dated b{ white-space:nowrap; }
   .on-dark .ylist b{ color:var(--sky); }
   .ylist a{ color:inherit; text-decoration:none; border-bottom:1px solid var(--sky-dim); }
   .ylist a:hover{ background:rgba(125,200,236,.18); }

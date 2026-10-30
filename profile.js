@@ -125,7 +125,8 @@ const PROFILE = {
     {
       group: "NorCal Premier PDP",
       items: [
-        { year: "2026", text: "U16 State Selection — Oshima Cup | Hakodate, Japan" },
+        { year: "2026", text: "U17 NorCal State Pool" },
+        { year: "",     text: "U16 State Selection — Oshima Cup | Hakodate, Japan" },
       ],
     },
     {

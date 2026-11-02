@@ -143,6 +143,7 @@ const PROFILE = {
   /* ---------- SEASON RESULTS ----------
      Add a game here as it's played, newest first. result is "W", "L", or "T". */
   results: [
+    { name: "vs. Cal Odyssey U17 ECNL",       detail: "Oct 31, 2026", result: "W", score: "4-2" },
     { name: "vs. Marin FC U17 ECNL",          detail: "Oct 25, 2026", result: "W", score: "8-1" },
     { name: "vs. Pleasanton RAGE U17 ECNL",   detail: "Oct 24, 2026", result: "T", score: "1-1" },
     { name: "vs. Santa Rosa United U17 ECNL", detail: "Oct 17, 2026", result: "W", score: "5-0" },
@@ -158,7 +159,6 @@ const PROFILE = {
   /* ---------- SHOWCASES & EVENTS ---------- */
   events: {
     upcoming: [
-      { name: "vs. Cal Odyssey U17 ECNL",       detail: "Kathleen MacDonald High School, San Jose, CA", date: "Oct 31, 2026",  time: "12:00 PM" },
       { name: "vs. MVLA U17 ECNL",              detail: "Foothill College, Los Altos Hills, CA",             date: "Nov 7, 2026",    time: "3:00 PM" },
       { name: "ECNL Phoenix National Showcase",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Nov 13-15, 2026", time: "TBD", national: true },
       { name: "vs. Placer United U17 ECNL",     detail: "Placer Valley Soccer Complex, Roseville, CA", date: "Mar 20, 2027",   time: "3:45 PM" },

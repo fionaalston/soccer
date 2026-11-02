@@ -88,6 +88,7 @@ const PROFILE = {
     address:    "",
     classYear:  "Class of 2028 (Junior)",
     gpa:        "4.08",
+    act:        "34",
     courses: [
       "Honors Pre-Calculus/Calculus",
       "Honors Advanced Topics in Biology + Lab",

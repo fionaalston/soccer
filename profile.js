@@ -50,6 +50,7 @@ const PROFILE = {
     { label: "Primary Foot", value: "Left" },
     { label: "Club",      value: "De Anza Force 10G ECNL" },
     { label: "GPA",       value: "4.08" },
+    { label: "ACT Score", value: "34" },
   ],
 
   /* ---------- HIGHLIGHTS ----------

@@ -219,14 +219,20 @@
      instead, and Foot's own right border is dropped to match. The
      shift is a fixed px (not a % of Club's own width) so it can't grow
      into an overlap with Foot's label — the widest thing in that box —
-     at narrower column widths. Only safe once all five facts share one
+     at narrower column widths. Only safe once all six facts share one
      row; below that, Club and Foot land in the same row instead. */
   @media (min-width:900px){
+    /* Club's nowrap text is wider than an equal sixth of the row, so the
+       last three columns size to their content and the first three share
+       what's left. */
+    .facts__g{ grid-template-columns:repeat(3,minmax(0,1fr)) auto auto auto; }
     .fact:nth-child(3){ border-right:0; }
     .fact:nth-child(4){ transform:translateX(-20px); border-left:1px solid var(--rule-d); border-right:0; }
     .fact:nth-child(4) i{ white-space:nowrap; }
     /* GPA doesn't shift, so its own left edge — not Club's shifted
-       border-right — is the stable place for the Club/GPA divider. */
+       border-right — is the stable place for the Club/GPA divider.
+       ACT's left edge then doubles as the GPA/ACT divider. */
+    .fact:nth-child(5){ border-left:1px solid var(--rule-d); border-right:0; }
     .fact:last-child{ border-left:1px solid var(--rule-d); }
   }
   .fact b{

@@ -244,5 +244,5 @@ const PROFILE = {
     instagram: "https://www.instagram.com/fiona.alston.soccer/",
   },
 
-  lastUpdated: "August 2026",
+  lastUpdated: "November 2026",
 };

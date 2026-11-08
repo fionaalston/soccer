@@ -68,7 +68,7 @@ const PROFILE = {
   /* ---------- PERSONAL INFO ---------- */
   personal: [
     { label: "Date of birth", value: "May 2010" },
-    { label: "Height",        value: "5'3\"" },
+    { label: "Height",        value: "5'4\"" },
     { label: "Weight",        value: "122 lbs" },
     { label: "Hometown",      value: "San Mateo, California" },
     { label: "NCAA ID#",      value: "2505617110" },

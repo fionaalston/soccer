@@ -163,6 +163,9 @@ const PROFILE = {
   events: {
     upcoming: [
       { name: "ECNL Phoenix National Showcase",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Nov 13-15, 2026", time: "TBD", national: true },
+      { name: "vs. Slammers FC ECNL",                         detail: "Field 3 · Wearing blue",  date: "Nov 13, 2026", time: "11:40 AM" },
+      { name: "vs. St. Louis Scott Gallagher Navy ECNL",      detail: "Field 7 · Wearing black", date: "Nov 14, 2026", time: "8:00 AM" },
+      { name: "vs. Beach Futbol Club ECNL",                   detail: "Field 1 · Wearing blue",  date: "Nov 15, 2026", time: "2:00 PM" },
       { name: "vs. Placer United U17 ECNL",     detail: "Placer Valley Soccer Complex, Roseville, CA", date: "Mar 20, 2027",   time: "3:45 PM" },
       { name: "vs. Mustang SC U17 ECNL",        detail: "De Anza College, Cupertino, CA",              date: "Mar 21, 2027",   time: "TBD" },
       { name: "ECNL Phoenix National Showcase",    detail: "Reach 11 Sports Complex, Phoenix, AZ", date: "Apr 2-4, 2027", time: "TBD", national: true },

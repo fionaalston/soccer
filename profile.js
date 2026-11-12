@@ -129,6 +129,7 @@ const PROFILE = {
       items: [
         { year: "2026", text: "U17 NorCal State Pool" },
         { year: "",     text: "U16 State Selection — Oshima Cup | Hakodate, Japan" },
+        { year: "",     text: "U16 State Pool" },
       ],
     },
     {

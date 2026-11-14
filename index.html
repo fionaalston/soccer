@@ -306,6 +306,19 @@
            text-transform:uppercase; color:var(--sky-dim); white-space:nowrap; }
   .on-dark .row__d{ color:var(--sky); }
   .row--sched{ grid-template-columns:132px 1fr; }
+  /* Games inside a showcase: nested under the showcase row (which drops
+     its rule), tucked in on a sky rule, and tighter than a full row. */
+  .row--parent{ border-bottom:0; padding-bottom:6px; }
+  .row--sub{ margin-left:10px; padding:6px 0 6px 18px; border-bottom:0; border-left:2px solid var(--sky-dim);
+             grid-template-columns:102px 1fr; }
+  .row--sub-end{ border-bottom:1px solid var(--rule); margin-bottom:0; }
+  .row--sub .row__d{ font-size:13px; }
+  .row--sub .row__m{ font-size:16px; }
+  .row--sub .row__t{ margin-top:0; }
+  /* Score on a game that's been played but hasn't moved to Season Results yet. */
+  .row__res{ font-family:var(--disp); font-weight:700; font-size:14px; letter-spacing:.1em; margin-left:12px; white-space:nowrap; }
+  .row__res.res--w{ color:var(--sky-dim); }
+  .row__res.res--l, .row__res.res--t{ color:var(--muted); }
   .row--national .row__m{ color:var(--sky-dim); }
   .row--result{ grid-template-columns:80px 1fr; }
   .row--result .row__d{ font-size:16px; }
@@ -466,7 +479,7 @@
   <span id="fname"></span><span id="fupd"></span>
 </div></footer>
 
-<script src="profile.js?v=2"></script>
+<script src="profile.js?v=4"></script>
 <script>
 (function(){
   const P = (typeof PROFILE !== 'undefined') ? PROFILE : null; if(!P) return;
@@ -564,10 +577,13 @@
       esc(e.date)+'</span></li>').join('')+'</ul>'
     : '';
   const evrSched = l => (l&&l.length)
-    ? '<ul class="rows">'+l.map(e=>'<li class="row row--sched'+(e.national?' row--national':'')+
+    ? '<ul class="rows">'+l.map((e,i)=>'<li class="row row--sched'+(e.national?' row--national':'')+
+      (e.sub?' row--sub'+(l[i+1]&&l[i+1].sub?'':' row--sub-end'):'')+(l[i+1]&&l[i+1].sub&&!e.sub?' row--parent':'')+
       '"><span class="row__d">'+esc(e.date)+(e.time?'<span class="row__t">'+esc(e.time)+'</span>':'')+
       '</span><span class="row__m">'+esc(e.name)+
-      (e.detail?' <span class="soft">'+esc(e.detail)+'</span>':'')+'</span></li>').join('')+'</ul>'
+      (e.detail?' <span class="soft">'+esc(e.detail)+'</span>':'')+
+      (e.result?'<span class="row__res res--'+esc(e.result.toLowerCase())+'">'+esc(e.result)+' '+esc(e.score)+'</span>':'')+
+      '</span></li>').join('')+'</ul>'
     : '';
   $('upcomingEvents').innerHTML = evrSched(ev.upcoming) ||
     '<p class="empty">Next season\u2019s schedule posting soon.</p>';
